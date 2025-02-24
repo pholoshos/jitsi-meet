@@ -11,7 +11,7 @@ export const colors = {
     primary03: '#003486',
     primary04: '#0045B3',
     primary05: '#0056E0',
-    primary06: '#246FE5',
+    primary06: '#006D5B',
     primary07: '#4687ED',
     primary08: '#99BBF3',
     primary09: '#CCDDF9',
