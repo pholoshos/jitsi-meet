@@ -201,12 +201,12 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                 className = { `welcome ${contentClassName} ${footerClassName}` }
                 id = 'welcome_page'>
                 <div className = 'header'>
-                    <div className = 'header-image' />
+
                     <div className = 'header-container'>
                         <div className = 'header-watermark-container'>
                             <div className = 'welcome-watermark'>
                                 <Watermarks
-                                    defaultJitsiLogoURL = { DEFAULT_WELCOME_PAGE_LOGO_URL }
+                                    defaultJitsiLogoURL = { "/images/logo.jpg" }
                                     noMargins = { true } />
                             </div>
                         </div>
@@ -378,30 +378,7 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
         return (<footer className = 'welcome-footer'>
             <div className = 'welcome-footer-centered'>
                 <div className = 'welcome-footer-padded'>
-                    <div className = 'welcome-footer-row-block welcome-footer--row-1'>
-                        <div className = 'welcome-footer-row-1-text'>{t('welcomepage.jitsiOnMobile')}</div>
-                        <a
-                            className = 'welcome-badge'
-                            href = { iosDownloadLink }>
-                            <img
-                                alt = { t('welcomepage.mobileDownLoadLinkIos') }
-                                src = './images/app-store-badge.png' />
-                        </a>
-                        <a
-                            className = 'welcome-badge'
-                            href = { androidDownloadLink }>
-                            <img
-                                alt = { t('welcomepage.mobileDownLoadLinkAndroid') }
-                                src = './images/google-play-badge.png' />
-                        </a>
-                        <a
-                            className = 'welcome-badge'
-                            href = { fDroidUrl }>
-                            <img
-                                alt = { t('welcomepage.mobileDownLoadLinkFDroid') }
-                                src = './images/f-droid-badge.png' />
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
         </footer>);

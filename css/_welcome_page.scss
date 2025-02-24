@@ -14,7 +14,7 @@ body.welcome-page {
     position: relative;
 
     .header {
-        background-image: $welcomePageHeaderBackground;
+        background-color: #424447;
         background-position: $welcomePageHeaderBackgroundPosition;
         background-repeat: $welcomePageHeaderBackgroundRepeat;
         background-size: $welcomePageHeaderBackgroundSize;
@@ -219,14 +219,14 @@ body.welcome-page {
     .welcome-page-button {
         border: 0;
         font-size: 14px;
-        background: #0074E0;
+        background: #d0f0c0;
         border-radius: 3px;
         color: #FFFFFF;
         cursor: pointer;
         padding: 16px 20px;
 
         &:focus-within {
-            outline: auto 2px #022e61;
+            outline: auto 2px #d0f0c0;
         }
     }
 

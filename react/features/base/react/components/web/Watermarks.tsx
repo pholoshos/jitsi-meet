@@ -125,8 +125,8 @@ class Watermarks extends Component<IProps, State> {
         if (this.state.showBrandWatermark) {
             reactElement = (
                 <div
-                    className = 'watermark rightwatermark'
-                    style = { _RIGHT_WATERMARK_STYLE } />
+                    className='watermark rightwatermark'
+                    style={_RIGHT_WATERMARK_STYLE} />
             );
 
             const { brandWatermarkLink } = this.state;
@@ -134,9 +134,8 @@ class Watermarks extends Component<IProps, State> {
             if (brandWatermarkLink) {
                 reactElement = (
                     <a
-                        href = { brandWatermarkLink }
-                        target = '_new'>
-                        { reactElement }
+                    >
+                        {reactElement}
                     </a>
                 );
             }
@@ -169,17 +168,17 @@ class Watermarks extends Component<IProps, State> {
             } as const;
 
             reactElement = (<div
-                className = { className }
-                style = { style } />);
+                className={className}
+                style={style} />);
 
             if (_logoLink) {
                 reactElement = (
                     <a
-                        aria-label = { t('jitsiHome', { logo: interfaceConfig.APP_NAME }) }
-                        className = { className }
-                        href = { _logoLink }
-                        target = '_new'>
-                        { reactElement }
+                        aria-label={t('jitsiHome', { logo: interfaceConfig.APP_NAME })}
+                        className={className}
+                        href={_logoLink}
+                        target='_new'>
+                        {reactElement}
                     </a>
                 );
             }
@@ -200,10 +199,10 @@ class Watermarks extends Component<IProps, State> {
 
             return (
                 <a
-                    className = 'poweredby'
-                    href = 'http://jitsi.org'
-                    target = '_new'>
-                    <span>{ t('poweredby') } jitsi.org</span>
+                    className='poweredby'
+                    href='http://softmoremo.co.za'
+                    target='_new'>
+                    <span>{t('poweredby')} softmore mo</span>
                 </a>
             );
         }
@@ -237,7 +236,7 @@ function _mapStateToProps(state: IReduxState, ownProps: any) {
     let _showJitsiWatermark = (
         customizationReady && !customizationFailed
         && SHOW_JITSI_WATERMARK)
-    || !isValidRoom;
+        || !isValidRoom;
     let _logoUrl: string | undefined = logoImageUrl;
     let _logoLink = logoClickUrl;
 

@@ -207,9 +207,6 @@ class LargeVideo extends Component<IProps> {
                 <SharedVideo />
                 {_whiteboardEnabled && <Whiteboard />}
                 <div id = 'etherpad' />
-
-                <Watermarks />
-
                 <div
                     id = 'dominantSpeaker'
                     onTouchEnd = { this._onDoubleTap }>
